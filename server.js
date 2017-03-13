@@ -1,5 +1,8 @@
 // server.js
 
+    // load the routes
+    require('./app/routes')(app);
+
 // set up ========================
 var express = require('express');  
 var app = express(); // create our app w/ express  
@@ -8,8 +11,6 @@ var mongoose = require('mongoose'); // mongoose for mongodb
 var morgan = require('morgan'); // log requests to the console (express4)  
 var bodyParser = require('body-parser'); // pull information from HTML POST (express4)  
 var database = require('./config/database'); //load the database config
-// load the routes
-    require('./app/routes')(app);
 
 // configuration =================
 app.use(express.static(__dirname + '/public')); // set the static files location /public/img will be /img for users  
