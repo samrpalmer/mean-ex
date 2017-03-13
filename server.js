@@ -1,9 +1,13 @@
 // server.js
 
+<<<<<<< HEAD
     // load the routes
     require('./app/routes')(app);
 
 // set up ========================
+=======
+// set up =========================
+>>>>>>> origin/master
 var express = require('express');  
 var app = express(); // create our app w/ express  
 var fs = require('fs')  
